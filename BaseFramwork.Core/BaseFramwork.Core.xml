@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseFramwork.Core</name>
+    </assembly>
+    <members>
+        <member name="T:BaseFramwork.Core.AOP.BlogCacheAOP">
+            <summary>
+            面向切面的缓存使用
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Core.AOP.ICaching">
+            <summary>
+            简单的缓存接口，只有查询和添加，以后会进行扩展
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Core.AOP.MemoryCaching">
+            <summary>
+            实例化缓存接口ICaching
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Core.BlogLogAOP">
+            <summary>
+            拦截器BlogLogAOP 继承IInterceptor接口
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.BlogLogAOP.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            实例化IInterceptor唯一方法 
+            </summary>
+            <param name="invocation">包含被拦截方法的信息</param>
+        </member>
+        <member name="T:BaseFramwork.Core.AuthHelper.JwtHelper">
+            <summary>
+            生成 Token
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.JwtHelper.IssueJwt(BaseFramwork.Core.AuthHelper.TokenModelJwt)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.JwtHelper.SerializeJwt(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseFramwork.Core.AuthHelper.TokenModelJwt">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.TokenModelJwt.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.TokenModelJwt.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.TokenModelJwt.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="F:BaseFramwork.Core.AuthHelper.OverWrite.JwtTokenAuth._next">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.OverWrite.JwtTokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.OverWrite.JwtTokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseFramwork.Core.AuthHelper.JwtToken">
+            <summary>
+            JWTToken生成类
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.JwtToken.BuildJwtToken(System.Security.Claims.Claim[],BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement)">
+            <summary>
+            获取基于JWT的Token
+            </summary>
+            <param name="claims">需要在登陆的时候配置</param>
+            <param name="permissionRequirement">在startup中定义的参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseFramwork.Core.AuthHelper.Policys.PermissionHandler">
+            <summary>
+            权限授权处理器
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionHandler.Schemes">
+            <summary>
+            验证方案提供对象
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionHandler.RoleModulePermissionServices">
+            <summary>
+            services 层注入
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.Policys.PermissionHandler.#ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,BaseFramwork.IServices.IRoleModulePermissionServices)">
+            <summary>
+            构造函数注入
+            </summary>
+            <param name="schemes"></param>
+            <param name="roleModulePermissionServices"></param>
+        </member>
+        <member name="T:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement">
+            <summary>
+            必要参数类，类似一个订单信息
+            继承 IAuthorizationRequirement，用于设计自定义权限处理器PermissionHandler
+            因为AuthorizationHandler 中的泛型参数 TRequirement 必须继承 IAuthorizationRequirement
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.Permissions">
+            <summary>
+            用户权限集合，一个订单包含了很多详情，
+            同理，一个网站的认证发行中，也有很多权限详情(这里是Role和URL的关系)
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.DeniedAction">
+            <summary>
+            无权限action
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.ClaimType">
+            <summary>
+            认证授权类型
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.LoginPath">
+            <summary>
+            请求路径
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.Issuer">
+            <summary>
+            发行人
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.Audience">
+            <summary>
+            订阅人
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.Expiration">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.SigningCredentials">
+            <summary>
+            签名验证
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.AuthHelper.Policys.PermissionRequirement.#ctor(System.String,System.Collections.Generic.List{BaseFramwork.Core.AuthHelper.PermissionItem},System.String,System.String,System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.TimeSpan)">
+            <summary>
+            构造
+            </summary>
+            <param name="deniedAction">拒约请求的url</param>
+            <param name="permissions">权限集合</param>
+            <param name="claimType">声明类型</param>
+            <param name="issuer">发行人</param>
+            <param name="audience">订阅人</param>
+            <param name="signingCredentials">签名验证实体</param>
+            <param name="expiration">过期时间</param>
+        </member>
+        <member name="T:BaseFramwork.Core.AuthHelper.PermissionItem">
+            <summary>
+            用户或角色或其他凭据实体,就像是订单详情一样
+            之前的名字是 Permission
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.PermissionItem.Role">
+            <summary>
+            用户或角色或其他凭据名称
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Core.AuthHelper.PermissionItem.Url">
+            <summary>
+            请求Url
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.CustomProfile.#ctor">
+            <summary>
+            配置构造函数，用来创建关系映射
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Core.Controllers.ClaimsController">
+            <summary>
+            这是一个测试的控制器，主要为了测试基于Claim的验证机制
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.ClaimsController.BatchDelete(System.String)">
+            <summary>
+            测试批量删除，如果是axios，记得要把数组格式化成 stringQuery
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.LoginController.GetJwtStr(System.String,System.String)">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.LoginController.GetJwtToken3(System.String,System.String)">
+            <summary>
+            获取JWT的方法3：整个系统主要方法
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseFramwork.Core.Controllers.ValuesController">
+            <summary>
+            测试类
+            </summary>
+        </member>
+        <member name="F:BaseFramwork.Core.Controllers.ValuesController._advertisementServices">
+            <summary>
+            Get方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            GET方法
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.ValuesController.Post1(BaseFramwork.Model.Love)">
+            <summary>
+            POST测试方法
+            </summary>
+            <param name="love"></param>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.ValuesController.Post(System.String)">
+            <summary>
+            POST方法
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            PUT方法
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BaseFramwork.Core.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            Delete方法
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:BaseFramwork.Core.Startup">
+            <summary>
+            配置类
+            </summary>
+        </member>
+    </members>
+</doc>

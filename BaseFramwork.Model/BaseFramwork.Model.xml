@@ -1,0 +1,1176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseFramwork.Model</name>
+    </assembly>
+    <members>
+        <member name="P:BaseFramwork.Model.Advertisement.ImgUrl">
+            <summary>
+            广告图片
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Advertisement.Title">
+            <summary>
+            广告标题
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Advertisement.Url">
+            <summary>
+            广告链接
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Advertisement.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Advertisement.Createdate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.BlogArticle">
+            <summary>
+            博客文章实体类
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bsubmitter">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.btitle">
+            <summary>
+            博客标题
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bcategory">
+            <summary>
+            类别
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bcontent">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.btraffic">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bcommentNum">
+            <summary>
+            评论数量
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bUpdateTime">
+            <summary> 
+            修改时间
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogArticle.bRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.BlogViewModels">
+            <summary>
+            博客信息展示类
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bsubmitter">
+            <summary>/// 创建人
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.btitle">
+            <summary>/// 博客标题
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.digest">
+            <summary>/// 摘要
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.previous">
+            <summary>
+            上一篇
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.previousID">
+            <summary>
+            上一篇id
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.next">
+            <summary>
+            下一篇
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.nextID">
+            <summary>
+            下一篇id
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bcategory">
+            <summary>/// 类别
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bcontent">
+            <summary>/// 内容
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.btraffic">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bcommentNum">
+            <summary>
+            评论数量
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bUpdateTime">
+            <summary>/// 修改时间
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.BlogViewModels.bRemark">
+            <summary>/// 备注
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Guestbook">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Guestbook.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.blogId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.createdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.phone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.QQ">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.body">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.ip">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Guestbook.isshow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Love">
+            <summary>
+            这是爱
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Love.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Love.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Love.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.MessageModel`1">
+            <summary>
+            通用返回信息类
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.MessageModel`1.Success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.MessageModel`1.Msg">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.MessageModel`1.Data">
+            <summary>
+            返回数据集合
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Module">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Module.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.ParentId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.LinkUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Area">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Controller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Action">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.OrderSort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.IsMenu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.CreateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.CreateBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.ModifyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.ModifyBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Module.ModifyTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.ModulePermission">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.ModulePermission.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.ModuleId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.PermissionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.CreateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.CreateBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.ModifyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.ModifyBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.ModulePermission.ModifyTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.OperateLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.OperateLog.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.Area">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.Controller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.Action">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.IPAddress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.LogTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.LoginName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.OperateLog.User_uID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.PageModel`1">
+            <summary>
+            通用分页信息类
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PageModel`1.page">
+            <summary>
+            当前页标
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PageModel`1.pageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PageModel`1.dataCount">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PageModel`1.PageSize">
+            <summary>
+            每页大小
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PageModel`1.data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.PasswordLib">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.PasswordLib.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.PLID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plURL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plPWD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plAccountName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plErrorCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plHintPwd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plHintquestion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plCreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plUpdateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.plLastErrTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.PasswordLib.test">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Permission">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Permission.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.OrderSort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Mid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Pid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.IsButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.CreateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.CreateBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.ModifyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.ModifyBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Permission.ModifyTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Role">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Role.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.OrderSort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.CreateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.CreateBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.ModifyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.ModifyBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Role.ModifyTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.RoleModulePermission">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.RoleModulePermission.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.RoleId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.ModuleId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.PermissionId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.CreateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.CreateBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.ModifyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.ModifyBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.RoleModulePermission.ModifyTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Student">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Student.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Student.Tid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Student.ClassId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Student.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.sysUserInfo">
+            <summary>
+            用户信息表
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.sysUserInfo.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uLoginName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uLoginPWD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uRealName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uRemark">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uCreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uUpdateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uLastErrTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.uErrorCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.sex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.age">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.birth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.addr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.sysUserInfo.tdIsDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Teacher">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Teacher.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Teacher.Tid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Teacher.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.Topic">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.Topic.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tLogo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tSectendDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tIsDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tRead">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tCommend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tGood">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tCreatetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tUpdatetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.Topic.tAuthor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.TopicDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.TopicDetail.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.TopicId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdLogo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdSectendDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdIsDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdRead">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdCommend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdGood">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdCreatetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdUpdatetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdTop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.TopicDetail.tdAuthor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BaseFramwork.Model.UserRole">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BaseFramwork.Model.UserRole.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.IsDeleted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.RoleId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.CreateId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.CreateBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.ModifyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.ModifyBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BaseFramwork.Model.UserRole.ModifyTime">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
